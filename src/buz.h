@@ -23,11 +23,13 @@ typedef struct {
 	u8  g_u8Out;
 }BUZ_TypeDef;
 
+//蜂鸣器响类型
 #define def_BuzNone							0
 #define def_BuzPower						1
 #define def_BuzNormal						2
 #define def_BuzErr							3
 
+//设置蜂鸣器响，按键时调用等
 #define def_BuzSet(x)						F_BuzSet(&g_sBuz,&t_u8BuzSet[x])
 
 /*************************************************
